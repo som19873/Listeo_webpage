@@ -1,0 +1,4052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <style>
+
+        *{
+
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container{
+        max-width: 1170px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: auto;
+
+        }
+        .top{
+            background-color: black;
+
+            width: 100%;
+            float: left;
+        }
+
+        .top-header{
+
+            width: 100%;
+            float:left;
+            padding: 10px;
+
+        }
+
+        .top-logo{
+
+            width: auto;
+            float: left;
+        }
+
+        .top-option{
+
+            width: auto;
+            float: right;
+        }
+
+        .top-option ul li {
+            color: white;
+            display: inline-block;
+            padding-top: 15px;
+            margin-left: 33px;
+        }
+
+        .top-option button {
+            background-color: red;
+            padding: 10px 40px;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .banner{
+
+            width: 100%;
+            float: left;
+        }
+
+        .top-banner{
+
+            width: 100%;
+            float: left;
+        }
+
+        .banner-background{
+
+            width: 100%;
+            float: left;
+            background-image: url(image/listeo_background_mockup.jpg);
+            background-position:center ;
+            background-size: cover;
+            padding: 50px;
+            height: 600px;
+            position: relative;
+
+        
+        }
+
+        .background-text{
+
+            width: 50%;
+            float: left;
+            position: relative;
+            z-index: 1;
+        }
+
+         .text-main{
+
+            width: 100%;
+            float: left;
+           
+         }
+
+         .text-heading{
+
+            width: 100%;
+            float: left;
+            color: white;
+            font-size: 40px;
+            padding: 20px;
+            line-height: 55px;
+
+        }
+
+        .icon-star{
+
+            width: 100%;
+            float: left;
+            padding: 0px 30px;
+          
+         
+        }
+
+        .icon-star ul li {
+           
+            display: inline-block;
+            color: #f1b900;
+         
+            font-size: 26px;
+            letter-spacing: 2px;
+        
+        }
+
+        .icon-button{
+
+            width: 100%;
+            float: left;
+            padding: 0px 30px;
+            margin-top: 10px;
+        }
+
+        .icon-button button {
+            color: #f1b900;
+            padding: 5px 13px;
+            border: none;
+            border-radius: 15px;
+            background-color: #5a564b;
+        }
+
+        .icon-button p{
+
+            color: white;
+            margin-top: 20px;
+            font-size: 24px;
+        }
+         .background-video{
+
+            width: 50%;
+            float: left;
+            margin-top: 150px;
+            Position:relative;
+            z-index: 1;
+        }
+         
+
+         .banner-video{
+
+            width: 100%;
+            float: left;
+        }
+
+        .two-button{
+
+            width: 100%;
+            float: left;
+            padding: 0px 30px;
+            margin-top: 50px;
+        }
+
+        .two-button ul li { 
+
+            display: inline-block;
+            border: none;
+
+        }
+
+      
+
+        .two-button ul li button {
+            padding: 15px 40px;
+            border: none;
+            border-radius: 15px;
+            font-size: 16px;
+            color: white;
+            background: transparent;
+            border: 2px solid white;
+        }
+
+       
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000000ba;
+            z-index: 1;
+        }
+
+        button.red{
+
+            background-color: red !important;
+            border: none !important;
+        }
+
+        .two-banner {
+            width: 100%;
+            float: left;
+            position: relative;
+            top: -60px;
+            z-index: 10;
+        }
+
+        .twomain-banner {
+            width: 100%;
+            /* float: left; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .medium-box{
+
+            width: 80%;
+            float: left;
+        }
+
+        .most-medium {
+            width: 100%;
+            float: left;
+            box-shadow: 0px 0px 2px;
+            padding: 12px;
+            border-radius: 34px;
+           background-color: white;
+        }
+
+        .medium-text {
+            width: 30%;
+            float: left;
+            margin-top: 47px;
+            font-size: 22px;
+        }
+        .main-mediumtext{
+
+            width: 100%;
+            float: left;
+            margin-top: 10px;
+        }
+
+        .medium-option{
+
+            width: 70%;
+            float: left;
+        }
+
+        .main-mediumoption{
+
+            width: 100%;
+            float: left;
+        }
+
+        .main-mediumoption ul li {
+            width: 30%;
+            float: left;
+            /* padding: 8px 10px; */
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .main-mediumoption img {
+            max-width: 20px;
+            vertical-align: top;
+            margin-right: 6px;
+        }
+
+        .themo{
+
+            width: 100%;
+            float: left;
+        }
+
+        .copy-themo{
+
+            width: 100%;
+            float: left;
+        }
+
+
+        .themo-text{
+
+            width: 100%;
+            float: left;
+            text-align: center;
+        }
+
+        .themo-text h3{
+
+            text-align: center;
+            margin-top: 30px;
+            font-size: 40px;
+        }
+
+        .themo-text p{
+
+            margin-top: 20px;
+            font-size: 28px;
+            
+        }
+
+        .themo-box{
+
+            width: 100%;
+            float: left;
+            margin-top: 40px;
+            padding: 10px;
+        }
+
+        .mainthemo-box{
+
+            width: 33%;
+            float: left;
+            padding: 10px;
+        }
+
+        .copythemo-box{
+
+            width: 100%;
+            float: left;
+        }
+        
+        .copythemo-box img{
+
+          height: 300px;
+
+        }
+
+        .main-setup{
+
+            width: 100%;
+            float: left;
+            margin-top: 20px;
+            display: flex;
+            justify-content:center ;
+        }
+
+        .setup{
+
+            width: 80%;
+            float: left;
+           border:1px solid #e2e2e2;
+           border-radius: 8px;
+
+        }
+        .setup-box{
+
+            width: 100%;
+            float: left;
+
+        }
+
+        .first-setup{
+
+            width: 33%;
+            float: left;
+        }
+
+        .main-firstsetup{
+
+            width: 100%;
+            float: left;
+        }
+
+        .main-firstsetup img{
+
+            width: 200px;
+            height: 200px;
+        }
+
+        .second-setup{
+
+            width: 33%;
+            float: left;
+        }
+
+        .main-secondsetup{
+
+            width: 100%;
+            float: left;
+            text-align: center;
+
+        }
+
+        .main-secondsetup button {
+            margin-top: 48px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            padding: 5px 7px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        .main-secondsetup p {
+            margin-top: 20px;
+            line-height: 28px;
+            font-size: 19px;
+        }
+
+
+
+        .third-setup{
+
+            width:33%;
+            float: left;
+        }
+
+        .main-thirdsetup{
+
+            width: 100%;
+            float: left;
+            text-align: end;
+
+        }
+
+        .main-thirdsetup img{
+
+            width: 200px;
+            height: 200px;
+        }
+       
+        .success{
+
+            width: 100%;
+            float: letf;
+
+        }
+
+        .banner-success{
+
+            width: 100%;
+            float: left;
+
+        }
+        
+        .background-success{
+
+            width: 100%;
+            float: left;
+            background-image: url(image/blob-scene-haikei2.svg);
+            background-size: contain;
+            background-position: center;
+
+        }
+
+        .main-success{
+
+            width: 100%;
+            float: left;
+        }
+
+        .mainsuccess-text {
+            margin-top: 40px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .main-success h2{
+   
+
+        }
+
+        .main-success button {
+            background-color: #f7f1d3;
+            color: #7e700d;
+            border: none;
+            padding: 2px 5px;
+            margin-top: 15px;
+            border-radius: 3px;
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+
+        
+
+        .intro{
+
+            width: 100%;
+            float: left;
+            padding: 28px;
+        }
+
+        .first-intro{
+
+            width: 50%;
+            float: left;
+        }
+
+        .main-firstintro{
+
+            width: 100%;
+            float: left;
+        }
+
+        .firstintro-girl{
+
+            width: 22%;
+            float: left;
+
+        }
+
+        .mainfirstintro-girl{
+
+            width: 100%;
+            float: left;
+        }
+
+        .mainfirstintro-girl img {
+            width: 100px;
+            height: 100px;
+            margin-top: 74px;
+            border: 1px solid;
+            border-radius: 70px;
+        }
+        .firstintro-text{
+
+            width: 50%;
+            float: left;
+        }
+
+        .main-firstintro-text{
+
+            width: 100%;
+            float: left;
+        }
+
+        .mainfirstintro-text h3 {
+    font-size: 22px;
+}
+
+        .firstintrotext-box {
+            margin-top: 25px;
+            background: white;
+          
+            padding: 10px;
+            border-radius: 7px;
+            box-shadow: 0px 2px 3px;
+            color: #666;
+        }
+
+        .firstintrotext-box p {
+            font-size: 20px;
+            padding: 4px;
+            line-height: 27px;
+            word-spacing: 4px;
+        }
+
+        .into-button{
+             
+            width: 100%;
+            float: left;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+
+        }
+
+        .into-button button {
+            padding: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            font-size: 15px;
+            border-radius: 40px;
+        }
+
+        .vendor-banner{
+
+            width: 100%;
+            float: left;
+
+        }
+
+        .mainvendor-banner{
+
+            width: 100%;
+            float: left;
+            padding: 45px;
+        }
+
+        .dokan-box{
+
+            width: 50%;
+            float: left;
+        }
+
+        .maindokan-box{
+
+            width: 100%;
+            float: left;
+        }
+
+        .dokan-option{
+
+            width: 100%;
+            float: left;
+
+        }
+
+        .dokan-option li{
+          
+            display: inline-block;
+
+        }
+
+        .dokan-option li button {
+            font-size: 22px;
+            padding: 7px 15px;
+            border: none;
+            border-radius: 7px;
+        }
+
+        .dokan-text {
+            width: 100%;
+            float: left;
+            margin-top: 25px;
+            font-size: 20px;
+        }
+
+        .dokan-text h2{
+
+
+        }
+
+        .dokan-text p{
+          
+            margin-top: 8px;
+        
+        }
+
+        .marketplace{
+
+            width: 100%;
+            float: left;
+            margin-top: 45px;
+        }
+
+        .marketplace-pic{
+
+            width: 14%;
+            float: left;
+        }
+
+        .marketplace-pic img{
+
+
+        }
+
+        .marketplace-text{
+
+            width: 75%;
+            float: left;
+
+        }
+
+        .marketplace-text h2{
+
+
+        }
+
+  
+       .marketplace-text p {
+            margin-top: 12px;
+            font-size: 20px;
+            line-height: 30px;
+            color: #666;
+        }
+
+        
+        
+        .woo-box{
+
+            width: 50%;
+            float: left;
+
+
+        }
+
+        .mainwoo-box {
+            width: 100%;
+            float: left;
+            
+        }
+
+        .mainwoo-pic{
+
+            width: 50%;
+            float: left;
+            margin-top: 130px;
+            padding: 0px 63px;
+        }
+
+        .mainwoo-box img {
+            width: 400px;
+            height: 310px;
+        }
+
+        .woo-text{
+
+            width: 100%;
+            float: left;
+            margin-top: 80px;
+        }
+
+        .woo-text button {
+            color: #417fbc;
+            background-color: #e7f3ff;
+            padding: 13px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            line-height: 30px;
+        }
+
+        .new-booking{
+              
+            width: 100%;
+            float: left;
+            margin-top: 40px;
+            box-shadow: 1px 0px 1px;;
+
+        }
+
+        .copy-booking{
+
+            width: 100%;
+            float: left;
+            padding: 50px 60px;
+        }
+
+        .booking-text{
+
+            width: 100%;
+            float: left;
+            margin-top: 20px;
+        
+
+        }
+
+        .booking-text h2{
+      
+            font-size: 28px;  
+
+        }
+
+        .booking-text p{
+          
+           
+            margin-top: 30px;
+            font-size: 23px;
+            color: #666;
+            line-height: 28px;
+        }
+
+        
+        
+        .booking-button{
+
+            width: 100%;
+            float: left;
+            text-align: center;
+            margin-top: 30px;
+
+        }
+
+        .booking-button button {
+            background-color: #fff4eb;
+            color: #82654e;
+            padding: 12px 27px;
+            font-size: 22px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .calender{
+
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+
+        }
+
+        .new-calender{
+
+            width: 100%;
+            float: left;
+        }
+    
+
+        .first-calender{
+
+            width: 50%;
+            float: left;
+
+        }
+
+        .mainfirst-calender{
+
+            width: 100%;
+            float: left;
+        }
+
+        .calender-text{
+
+            width: 100%;
+            float: left;
+            font-size: 25px;
+        }
+
+        .calender-text span {
+
+          
+            font-size: 26px;
+            border: 1px solid;
+            padding: 5px;
+            background: #f91942;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            text-align: center;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            line-height: 30px;
+        }
+
+        .calender-text p {
+            font-size: 20px;
+            margin-top: 30px;
+            color: #666;
+            line-height: 32px;
+        }
+
+        .firstcalender-pic{
+
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+        }
+
+        .firstcalender-pic img{
+           
+           width: 400px;
+           height: 390px;
+       }
+
+       .thirdcalender-text{
+
+            
+            width: 100%;
+            float: left;
+            font-size: 25px;
+            margin-top: 90px;
+        }
+
+        .thirdcalender-text span {
+
+            font-size: 26px;
+            border: 1px solid;
+            padding: 5px;
+            background: #f91942;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            text-align: center;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            line-height: 30px;
+        }
+
+        .thirdcalender-text p {
+
+            font-size: 20px;
+            margin-top: 30px;
+            color: #666;
+            line-height: 32px;
+        }
+
+        .fourcalender-pic{
+
+            width: 100%;
+            float: left;
+            margin-top: 190px;
+        }
+
+        .fourcalender-pic img{
+
+            width: 500px;
+            height:230px;
+         }
+
+        .second-calender{
+
+            width: 48%;
+            float:left;
+
+        }
+
+        .mainsecond-calender{
+
+            width: 100%;
+            float: left;
+        }
+
+        .secondcalender-pic{
+
+            width: 100%;
+            float: left;
+            margin-left: 60px;
+        }
+
+        .secondcalender-pic img{
+           
+            width: 400px;
+            height: 390px;
+        }
+
+        .secondcalender-text{
+
+            
+            width: 100%;
+            float: left;
+            font-size: 25px;
+            margin-top: 30px;
+        }
+
+        .secondcalender-text span {
+
+            font-size: 26px;
+            border: 1px solid;
+            padding: 5px;
+            background: #f91942;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            text-align: center;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            line-height: 30px;
+        }
+
+        .secondcalender-text p {
+
+            font-size: 20px;
+            margin-top: 30px;
+            color: #666;
+            line-height: 32px;
+        }
+
+        .thirdcalender-pic{
+           
+            width: 100%;
+            float: left;
+            margin: 80px;
+        }
+
+        .thirdcalender-pic img{
+           
+            width: 490px;
+            height: 350px;
+       }
+
+       .fourcalender-text{
+
+            
+            width: 100%;
+            float: left;
+            font-size: 25px;
+          
+        }
+
+        .fourcalender-text span {
+
+            font-size: 26px;
+            border: 1px solid;
+            padding: 5px;
+            background: #f91942;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            text-align: center;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            line-height: 30px;
+        }
+
+        .fourcalender-text p {
+
+            font-size: 20px;
+            margin-top: 30px;
+            color: #666;
+            line-height: 32px;
+        }
+
+        .olx{
+
+            width: 100%;
+            float: left;
+
+        }
+
+        .olx-banner{
+
+            width: 100%;
+            float: left;
+            background-image: url(image/blob-scene-haikei2.svg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .olx-text{
+
+            padding: 43px 100px;
+        }
+
+        .olx-text h2{
+            font-size: 30px;
+           
+        }
+
+        .olx-text p{
+
+            
+            margin-top: 20px;
+            line-height: 28px;
+            font-size: 20px;
+            color: #666;
+
+        }
+
+        .main-olx{
+
+            width: 100%;
+            float: left;
+            padding: 4px 100px;
+        }
+
+        .smart-box{
+
+            width: 30%;
+            float: left;
+            background-color: #e8f6de;
+            color: #2d8c00;
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+
+        .main-smartbox{
+
+            width: 100%;
+            float: left;
+
+        }
+
+        .main-smartbox h2{
+
+
+        }
+
+        .main-smartbox p{
+
+            margin-top: 10px;
+        }
+
+        .main-smartbox h3{
+            margin-top: 10px
+
+        }
+
+        .example-box{
+
+            width: 70%;
+            float: left;
+            padding: 10px
+        }
+
+        .main-examplebox {
+            width: 100%;
+            float: left;
+            background-color: white;
+          
+            border-radius: 20px;
+            line-height: 40px;
+           
+        }
+
+        .main-exampleboxtext {
+            width: 100%;
+            float: left;
+            background-color: black;
+            text-align: center;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .delete{
+
+           width: 100%;
+           float: left;
+        }
+
+        .delete img{
+
+            max-width: 22px;
+        }
+
+        .example-table{
+
+            width: 100%;
+            float: left;
+            padding: 10px 25px;
+            text-align: center;
+
+        }
+
+        .table-text {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .lastexample-text{
+
+            width: 100%;
+            float: left;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .lastexample-text p{
+
+            line-height: 30px;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .feature-boxes{
+
+            width: 100%;
+            display: flex;
+            gap: 10px;
+        }
+
+        .main-featureboxes{
+
+            width: 25%;
+            float: left;
+            margin-top: 20px;
+        }
+
+        .mainfeaturebox-material{
+
+            width: 100%;
+            float: left;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            line-height: 26px;
+            min-height: 230px;
+        }
+
+        .mainfeatureboxes-icon {
+            color: red;
+            width: 100%;
+            float: left;
+            text-align: center;
+            font-size: 80px;
+        }
+
+        .mainfeatureboxes-text {
+            width: 100%;
+            float: left;
+            text-align: center;
+        }
+
+        .mainfeatureboxes-text h2{
+  
+            font-size: 24px;
+            margin-top: 18px;
+
+        }
+
+        .mainfeatureboxes-text p{
+
+            color: #666;
+            margin-top: 12px;
+
+        }
+
+        .gateways-text {
+            width: 100%;
+            float: left;
+            margin-top: 40px;
+            padding: 10px;
+        }
+        .gateways-text h2{
+
+
+        }
+
+        .gateways-text button {
+            background-color: white;
+            border: none;
+            padding: 7px 10px;
+            border-radius: 4px;
+            /* text-align: center; */
+        }
+        .gateways-text p {
+            margin-top: 20px;
+            font-size: 20px;
+            line-height: 28px;
+            color: 666;
+            color: #666;
+        }
+
+        .pay-pic {
+            width: 100%;
+            float: left;
+            margin-top: 20px;
+            background: white;
+            padding: 18px;
+            border-radius: 7px;
+        }
+
+        .stripe{
+
+            width: 100%;
+            float: left;
+        }
+        .stripe-banner {
+            width: 100%;
+            float: left;
+            display: flex;
+            gap: 40px;
+        }
+
+        .stripe-text{
+
+            width: 50%;
+            float:left;
+            margin-top: 40px;
+
+        }
+
+        .mainstripe-text{
+
+            width: 100%;
+            float: left;
+        }
+
+        .mainstripe-text h2 {
+            align-items: center;
+            display: flex;
+            gap: 10px;
+        }
+
+        .mainstripe-text button {
+            border: none;
+            background-color: white;
+            border-radius: 10px;
+            /* display: flex; */
+        }
+        .mainstripe-text p {
+            margin-top: 22px;
+            font-size: 21px;
+            color: #666;
+            line-height: 30px;
+            text-align: left;
+        }
+
+        .last-stripe {
+            margin-top: 40px;
+            color: #417fbc;
+            background-color: #ddeeff;
+            font-size: 18px;
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+            line-height: 28px;
+        }
+        .stripe-image{
+
+            width: 50%;
+            float: left;
+            margin-top: 40px;
+        }
+
+        .sms{
+
+            width: 100%;
+            float: left;
+        }
+
+        .sms-banner {
+            width: 100%;
+            float: left;
+            margin-top: 50px;
+            padding: 50px;
+        }
+
+        .sms-pic{
+
+            width: 50%;
+            float: left;
+        }
+
+        .mainsms-pic{
+
+            width: 100%;
+            float: left;
+
+        }
+
+        .mainsms-pic img{
+
+            width: 500px;
+            height: 300px;
+        }
+
+        .sms-text{
+
+            width: 50%;
+            float: left;
+        }
+
+        .mainsms-text {
+            width: 100%;
+            float: left;
+            margin-top: 24px;
+        }
+
+        .mainsms-text h2 {
+            display: flex;
+            gap: 8px;
+            font-size: 30px;
+        }
+
+        .mainsms-text img{
+
+
+        }
+
+       .mainsms-text p {
+            font-size: 22px;
+            margin-top: 28px;
+            color: #666;
+            text-align: left;
+        }
+
+        .map{
+
+            width: 100%;
+            float: left;
+            background-color: black;
+        }
+
+        .map-banner{
+
+            width: 100%;
+            float:left;
+            margin-top: 70px;
+        }
+
+        .map-pic{
+
+            width: 50%;
+            float: left;
+        }
+
+        .mainmap-pic{
+
+            width: 100%;
+            float:left;
+        }
+
+        .map-text {
+            width: 50%;
+            float: left;
+            /* padding: 7px; */
+            background-color: black;
+            color: white;
+        }
+        .mainmap-text{
+
+            width: 100%;
+            float: left;
+        }
+
+        .mainmap-texts h2 {
+            margin-top: 36px;
+            padding-left: 42px;
+            font-size: 35px;
+        }
+        .mainmaptext-pic {
+            padding: 15px 45px;
+        }
+
+       
+        .mainmap-text {
+            width: 100%;
+            float: left;
+            padding: 13px 45px;
+            font-size: 26px;
+        }
+
+        .dashboard{
+
+            width: 100%;
+            float: left;
+        }
+
+        .main-dashboard {
+            width: 100%;
+            float: left;
+            margin-bottom: 30px;
+            padding: 10px;
+            background-color: #f9f9f9;;
+           
+
+        }
+        .dashboard-text {
+            width: 50%;
+            float: left;
+            font-size: 20px;
+            padding: 30px 87px;
+            background-image: url(image/front-end-dashboard-icon.png);
+            background-position: cover;
+            background-size: cover;
+        }
+        .maindashboard-text{
+
+            width: 100%;
+            float: left;
+        }
+
+       
+
+        .maindashboard-text p {
+            margin-top: 28px;
+            color: #666;
+            line-height: 28px;
+            font-size: 19px;
+        }
+
+       
+        .watch-dash {
+            margin-top: 28px;
+            padding: 8px 27px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 26px;
+            font-size: 18px;
+        }
+
+        .dashboard-pic{
+
+         width: 50%;
+         float: left;
+         margin-top: 40px;
+        }
+
+        .maindashboard-pic{
+
+            width: 100%;
+            float: left;
+        }
+
+        .maindashboard-pic img{
+  
+            width: 400px;
+            height:300px ;
+
+        }
+
+        .translate{
+
+            width: 100%;
+            float: left;
+        }
+
+        .main-translate {
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .translate-pic{
+
+            width: 50%;
+            float: left;
+        }
+
+        .maintranslate-pic{
+
+            width: 100%;
+            float: left;
+        }
+
+        .maintranslate-pic img{
+
+            width: 500px;
+            height: 400px;
+
+        }
+
+        .translate-text{
+
+            width: 50%;
+            float: left;
+        }
+
+        .maintranslate-text {
+            width: 100%;
+            float: left;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .maintranslate-text h2{
+
+
+        }
+
+        .maintranslate-text p {
+            margin-top: 25px;
+            font-size: 24px;
+            color: #666;
+        }
+
+        .drop{
+
+            width: 100%;
+            float: left;
+        }
+
+        .main-drop{
+
+            width: 100%;
+            float: left;
+            background-color: #f9f9f9;;
+        }
+
+        .drop-text {
+            width: 50%;
+            float: left;
+            margin-top: 31px;
+            padding: 40px 84px;
+            font-size: 22px;
+        }
+        .maindrop-text{
+
+            width: 100%;
+            float: left;
+        }
+
+        .maindrop-text h2{
+
+
+        }
+
+        .maindrop-text p {
+            font-size: 18px;
+            margin-top: 10px;
+            line-height: 32px;
+            color: #666;
+        }
+
+        .drop-pic{
+
+            width: 50%;
+            float: left;
+        }
+
+        .maindrop-pic {
+            width: 100%;
+            float: left;
+            margin-top: 10px;
+            padding: 74px 35px;
+        }
+
+        .maindrop-pic img{
+
+            width: 400px;
+            height: 300px;
+        }
+
+        .support{
+
+            width: 100%;
+            float: left;
+        }
+
+        .support-banner{
+
+            width:100%;
+            margin-top: 30px;
+            float: left;
+            margin-bottom: 30px;
+        }
+
+        .ical-support{
+
+            width: 50%;
+            float: left;
+        }
+
+        .icalsupport-text {
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+            padding: 15px 62px;
+        }
+
+        .icalsupport-text h2 {
+            margin-left: 64px;
+            font-size: 30px;
+        }
+
+        .icalsupport-pic {
+            width: 100%;
+            float: left;
+            padding: 8px 58px;
+        }
+
+        .icalsupport-pic button {
+            padding: 9px 11px;
+            border: none;
+            margin-top: 20px;
+        }
+
+        .icalsupport-word {
+
+            width: 100%;
+            float: left;
+            padding: 20px 59px;
+        }
+
+        .icalsupport-word p {
+            font-size: 17px;
+            color: #666;
+            line-height: 24px;
+        }
+
+        .ios{
+
+            width: 50%;
+            float: left;
+        }
+
+        .ios-support{
+
+            width: 100%;
+            float: left;
+            margin-top: 50px;
+        }
+
+        .ios-support h2{
+
+            font-size: 28px;
+
+        }
+
+        .ios-support p {
+            margin-top: 30px;
+            font-size: 23px;
+            color: #666;
+            padding: 10px 0px;
+            line-height: 33px;
+        }
+        .ios-support button {
+            background-color: #f91b420d;
+            margin-top: 26px;
+            padding: 16px 20px;
+            color: #f91b42;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .iossupport-more{
+
+            width: 100%;
+            float: left;
+        }
+
+        .iossupport-more button {
+            background: red;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+        }
+
+        .google{
+
+            width: 100%;
+            float: left;
+        }
+
+        .google-banner{
+
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+            padding: 30px;
+            background: #f9f9f9;
+
+        }
+
+        .google-text {
+            width: 50%;
+            float: left;
+            font-size: 19px;
+            padding: 30px 60px;
+        }
+        .maingoogle-text{
+
+            width: 100%;
+            float: left;
+        }
+
+       
+        .maingoogle-text p {
+            margin-top: 25px;
+            line-height: 26px;
+            text-align: left;
+            color: #666;
+        }
+
+        .maingoogle-pic{
+
+            width: 100%;
+            float: left;
+            margin-top: 40px;
+            border-radius: 3px;
+        }
+
+        .maingoogle-pic img{
+
+         
+            width:520px;
+            height: 310px;
+        }
+
+        .multi{
+
+            width: 50%;
+            float: left
+        }
+
+        .multi-text{
+
+            width: 100%;
+            float: left;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+       
+
+        .multi-text p {
+            margin-top: 20px;
+            color: #666;
+            font-size: 21px;
+            padding: 0px 3px;
+        }
+
+        .multi-pic {
+            width: 100%;
+            float: left;
+            margin-top: 54px;
+            border-radius: 3px;
+        }
+        .multi-pic img{
+
+            width: 520px;
+            height: 310px;
+        }
+
+        .ui{
+
+            width: 100%;
+            float: left;
+
+        }
+
+        .ui-banner{
+
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+        }
+
+        .ui-text{
+
+            width: 50%;
+            float: left;
+
+        }
+
+        .mainui-text{
+
+            width: 100%;
+            float: left;
+            margin-top: 35px;
+        }
+
+        .mainui-text h2 {
+            font-size: 30px;
+            padding: 0px 80px;
+        }
+
+        .mainui-text p {
+            margin-top: 24px;
+            color: #666;
+            font-size: 20px;
+            line-height: 28px;
+            padding: 0px 81px;
+        }
+        .mainui-text h3 {
+            margin-top: 28px;
+            padding: 0px 80px;
+            color: #444;
+            font-size: 17px;
+            line-height: 28px;
+        }
+
+        .ui-pic{
+
+            width: 50%;
+            float: left;
+
+        }
+
+        .mainui-pic{
+
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+        }
+
+        .mainui-pic img{
+
+            width: 550px;
+            height: 350px;
+
+        }
+
+        .mainui-pic button {
+            padding: 18px 135px;
+            margin: 0px 64px;
+            border: none;
+            color: white;
+            background-color: red;
+            border-radius: 6px;
+        }
+
+        .product {
+            width: 100%;
+            float: left;
+            box-shadow: 0px 0px 2px;
+            margin-top: 50px;
+        }
+
+        .product-banner{
+
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+            margin-bottom: 50px;
+
+        }
+
+        .product-text {
+            width: 70%;
+            text-align: center;
+            /* margin-top: auto; */
+            /* padding: 0px 8px; */
+            margin: auto;
+        }
+
+        .product-text h2 {
+            font-size: 28px;
+        }
+
+        .product-text p {
+            padding: 0px 40px;
+            color: #666;
+            font-size: 22px;
+            margin-top: 16px;
+        }
+
+        .product-image {
+            width: 100%;
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding: 0px 100px;
+        }
+        .product-pic{
+
+            width: 33%;
+            float: left;
+           
+        }
+
+        .mainproduct-pic{
+
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+
+        }
+
+        .dark{
+
+            width: 100%;
+            float: left;
+
+
+        }
+
+        .dark-banner{
+
+            width: 100%;
+            float: left;
+            padding: 30px;
+            background-color:#f9f9f9
+        }
+
+        .dark-text{
+
+            width: 70%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .maindark-text{
+
+            width: 100%;
+            float: left;
+        }
+
+        .maindark-text h2{
+
+
+            margin-top: 30px;
+            font-size: 28px;
+        }   
+        
+        .maindark-text p{
+
+            font-size: 22px;
+            margin-top: 16px;
+            color: #845d5d;
+            padding: 0px 20px;
+
+        }
+
+        .dark-pic{
+
+            width: 50%;
+            float: left;
+        }
+
+        .maindark-pic {
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        .mobile{
+
+            width: 100%;
+
+            float: left;
+        }
+
+        .mobile-banner{
+
+            width: 100%;
+            float: left;
+          
+            margin-top: 60px;
+        }
+
+        .mobile-text{
+
+            width: 70%;
+            float: left;
+        }
+
+        .mainmobile-text{
+
+            width: 100%;
+            float: left;
+            background-image: url(image/mobile-friendly.svg) ;
+            background-position: 117px 28px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .mainmobile-text h2 {
+            font-size: 30px;
+            margin-top: 80px;
+            padding: 10px 140px;
+        }
+
+        .mainmobile-text p {
+            margin-top: 28px;
+            padding: 10px 140px;
+            font-size: 20px;
+            line-height: 30px;
+            color: #845d5d;
+        }
+
+        .mobile-pic{
+
+            width: 30%;
+            float: left;
+        }
+
+        .mainmobile-pic {
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+        }
+
+        .mainmobile-pic img {
+            width: 300px;
+            height: 520px;
+            border-radius: 6px;
+        }
+
+        .unique{
+
+            width: 100%;
+            float: left;
+            background-color: #f9f9f9;
+        }
+
+        .unique-banner {
+            width: 100%;
+            float: left;
+            margin-top: 40px;
+            background-color: #f9f9f9;
+            padding: 0px 40px;
+        }
+            
+
+            
+        .unique-banner h3 {
+            text-align: center;
+            font-size:32px;
+            margin-top: 45px;
+
+        }
+
+        .unique-box{
+
+            width: 30%;
+            float: left;
+            padding: 10px;
+
+
+        }
+
+        .mainunique-box{
+
+            width: 100%;
+            float: left;
+            background-color: white;
+            border-radius: 6px;
+            margin-top: 40px;
+            margin-left: 45px;
+        }
+
+        .unique-icon {
+            width: 100%;
+            text-align: center;
+            font-size: 70px;
+            color: red;
+            margin-top: 25px;
+        }
+
+
+        .unique-icon{
+
+            width: 100%;
+            text-align: center;
+        }
+
+        .unique-text {
+            width: 100%;
+            text-align: center;
+            margin-top: 22px;
+        }
+        .unique-text h2 {
+            font-size: 18px;
+        }
+
+        .unique-text p {
+            margin-top: 17px;
+            padding: 0px 12px;
+            margin-bottom: 20px;
+            color: #666;
+            line-height: 24px;
+        }
+
+        .customer{
+
+            width: 100%;
+            float: left;
+        }
+
+        .customer-banner{
+
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+            padding: 20px;
+           
+        }
+
+        .customer-text{
+
+            width: 100%;
+            text-align: center;
+            float: left;
+            margin-top: 30px;
+
+        }
+
+        .customer-text h2{
+
+            font-size: 29px;
+        }
+
+        .customer-text p {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #666;
+        }
+
+        .showcase{
+
+            width: 100%;
+            float: left;
+            margin-top: 20px;
+        }
+
+        .customer-pic{
+
+            width: 33%;
+            float: left;
+            padding: 10px;
+        }
+
+        .maincustomer-pic{
+
+            width: 100%;
+            float: left;
+        }
+
+        .online{
+
+            width: 100%;
+            float: left; 
+        }
+
+        .online-banner{
+
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+        }
+
+        .first-banner{
+
+            width: 50%;
+            float: left;
+
+        }
+
+        .firstonline-banner{
+
+            width: 100%;
+            float: left;
+            background-color: #c71435;
+        }
+
+        .firstonlinebanner-pic{
+
+            width: 100%;
+            float: left;
+            text-align: center;
+            margin-top: 90px;
+        }
+
+        .firstonlinebanner-text{
+
+            width: 100%;
+            float: left;
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .firstonlinebanner-text h3{
+
+            font-size: 25px;
+            margin-top: 20px;
+
+        }
+
+        .firstonlinebanner-text p{
+
+            margin-top: 22px;
+            padding: 0px 111px;
+            font-size: 22px;
+            line-height: 34px;
+
+        }
+
+        .second-banner{
+
+            width: 50%;
+            float: left;
+        }
+
+        .secondonline-banner{
+
+            width: 100%;
+            float: left;
+            background-color: #bf0f30;
+        }
+
+        .secondonlinebanner-pic{
+
+            width: 100%;
+            float: left;
+            text-align: center;
+            margin-top: 90px;
+        
+        }
+
+        .secondonlinebanner-text{
+
+            width: 100%;
+            float: left;
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .secondonlinebanner-text h3{
+
+            font-size: 25px;
+            margin-top: 20px;
+
+        }
+
+        .secondonlinebanner-text p{
+
+            margin-top: 22px;
+            padding: 0px 111px;
+            font-size: 22px;
+            line-height: 34px;
+
+        }
+
+        .last-text{
+
+            width: 100%;
+            margin-top: 50px;
+            text-align: center;
+            float: left;
+            margin-bottom: 40px;
+        }
+
+        .last-text p{
+
+            font-size: 20px;
+            color: #888;
+        }
+
+        .last-text img{
+
+
+        }
+
+
+
+
+
+       
+
+
+       
+
+
+      
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+        
+
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="top">
+
+            <div class="container">
+                <div class="top-header">
+            
+                    <div class="top-logo">
+                   
+                     <img src="image/logo2.png" width="150px">
+                    </div>
+        
+                    <div class="top-option">
+        
+        
+                        <ul>
+                            <li>Themos Demos</li>
+                            <li>Features</li>
+                            <li>Docs</li>
+        
+                            <li><button>Add to Cart</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="banner">
+
+        <div class="top-banner">
+
+            <div class="banner-background">
+                <div class="overlay"></div>
+
+                <div class="background-text">
+
+                    <div class="text -main">
+
+                        <div class="text-heading">
+
+                        <h2>Built-In Booking</h2>
+                        <h3> Directory & Listings</h3>
+                        <h4>WordPress Theme</h4>
+
+                        </div>
+
+                        <div class="icon-star">
+
+                            <ul>
+                                <li><i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="icon-button">
+
+                            <button>5 out of 5 stars basend on 359 rating</button>
+                          
+
+                             <p>Build a professional directory website similar to Yelp, Airbnb, Booking.com, Gumtree, OLX or multi-vendor marketplace like Etsy</p>
+
+                        </div>
+
+                        <div class="two-button">
+                            <ul>
+                                <li><button class="red">Buy Now</button></li>
+                                <li><button>Browse Demos</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="background-video">
+
+                    <div class="banner-video">
+
+                     <iframe width="450px" height="250px" src="https://www.youtube.com/embed/QDQ4i9pCxuM" title="Listeo - Directory &amp; Listings With Booking - WordPress Theme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="two-banner">
+
+        <div class="twomain-banner">
+
+            <div class="medium-box">
+
+              
+
+                <div class="most-medium">
+
+                    <div class="medium-text">
+
+                        
+
+                        <div class="main-mediumtext">
+
+                        <h2>Build any kind of directory website!</h2>
+
+                        </div>
+
+                    </div>
+
+                    <div class="medium-option">
+
+                        <div class="main-mediumoption">
+
+                            <ul>
+                                <li><img src="image/check.svg" alt="">Classifieds Ads</li>
+                                <li><img src="image/check.svg" alt="">Apartment Rentals</li>
+                                <li><img src="image/check.svg" alt="">Traveling Booking</li>
+                                <li><img src="image/check.svg" alt="">Multi-Vendor Marketplace</li>
+                                <li><img src="image/check.svg" alt="">Doctors Directory</li>
+                                <li><img src="image/check.svg" alt="">City Guides</li>
+                                <li><img src="image/check.svg" alt="">Local Businesses</li>
+                                <li><img src="image/check.svg" alt="">Tutors Directory</li>
+                                <li><img src="image/check.svg" alt="">Yacht Charters</li>
+                                <li><img src="image/check.svg" alt="">Barbers Directory</li>
+                                <li><img src="image/check.svg" alt="">Real Estate Ads</li>
+                                <li><img src="image/check.svg" alt=""> Your Unique Idea</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+           
+        </div>
+
+      
+       
+    </div>
+
+    <div class="themos">
+
+        <div class="copy-themo">
+
+            <div class="themo-text">
+
+                <h3>Theme Demos</h3>
+       
+                <p>Pixel-perfect demos created by a professional designer.
+                   Ready to be customized with Elementor page builder and a large library of elements.</p>
+              
+            </div>
+
+            <div class="themo-box">
+
+                <div class="mainthemo-box">
+
+                    <div class="copythemo-box">
+                    
+                        <img src="image/20230521_214241.jpg" width="100%" alt="">
+
+                    </div>
+
+                </div>
+
+                <div class="mainthemo-box">
+
+                    <div class="copythemo-box">
+                    
+                        <img src="image/20230521_214241.jpg" width="100%" alt="">
+
+                    </div>
+                    
+                </div>
+
+                <div class="mainthemo-box">
+
+                    <div class="copythemo-box">
+                    
+                        <img src="image/20230521_214241.jpg" width="100%" alt="">
+
+                    </div>
+                    
+                </div>
+
+                <div class="mainthemo-box">
+
+                    <div class="copythemo-box">
+                    
+                        <img src="image/20230521_214241.jpg" width="100%" alt="">
+
+                    </div>
+                    
+                </div>
+
+                <div class="mainthemo-box">
+
+                    <div class="copythemo-box">
+                    
+                        <img src="image/20230521_214241.jpg" width="100%" height="100%" alt="">
+
+                    </div>
+                
+                </div>
+
+                <div class="mainthemo-box">
+
+                    <div class="copythemo-box">
+                    
+                        <img src="image/20230521_214241.jpg" width="100%" height="100%" alt="">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="main-setup">
+
+            <div class="setup">
+
+                <div class="setup-box">
+
+                    <div class="first-setup">
+
+                        <div class="main-firstsetup">
+
+                            <img src="image/banner-clipart2.svg"  width="100%">
+                        </div>
+                    
+                    </div>
+
+                    <div class="second-setup">
+
+                        <div class="main-secondsetup">
+
+                            <button>Theme Setup Service</button>
+
+                            <p>Looking for ready to use website ?
+                                <br>
+                                Let our wordpress expert get your websiite ready!
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="third-setup">
+
+                        <div class="main-thirdsetup">
+
+                            <img src="image/banner-clipart.svg" width="100%">
+                        </div>
+                    </div>
+
+                        
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+  
+   
+    <div class="success">
+
+        <div class="banner-success">
+
+
+            <div class="background-success">
+
+                <div class="backgroundsuccess-image">
+               
+                    <div class="main-success">
+
+
+
+
+                        <div class="mainsuccess-text">
+
+                            <h2>Success Stories</h2>
+
+                            <button>Check real stories of our customers across the world. 🙂</button>
+                    
+                        </div>
+                        
+                        <div class="intro">
+
+                            <div class="first-intro">
+
+                                <div class="main-firstintro">
+
+                                    <div class="firstintro-girl">
+
+                                        <div class="mainfirstintro-girl">
+                                
+                                        <img src="image/ss-2.jpg" alt="">
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="firstintro-text">
+
+                                        <div class="mainfirstintro-text">
+                        
+                                            <h3>I am non-techie person but making website with Listeo was a breeze</h3>
+
+                                            <div class="firstintrotext-box">
+
+                                                <p>I tried one "famous" directory theme before Listeo. You won't believe how their support was goofy and incompetent. A particular shoutout to Lukas and Mateusz. There's nothing better than help directly from people who created theme.</p>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            
+                            <div class="first-intro">
+
+                                <div class="main-firstintro">
+
+                                    <div class="firstintro-girl">
+
+                                        <div class="mainfirstintro-girl">
+                                
+                                        <img src="image/ss-7.jpg" alt="">
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="firstintro-text">
+
+                                        <div class="mainfirstintro-text">
+                        
+                                            <h3>Great and reliable theme to help you grow your business or idea!</h3>
+                                            <div class="firstintrotext-box">
+
+                                                <p>Thanks to Listeo theme we have successfully launched <a href="https://bodizdrav.net/" target="_blank">bodizdrav.net</a> - list of Slovenian alternative healers and practitioners of complementary medicine. Our website is gaining new customers on a daily basis!</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        
+                        </div> 
+                    <div>
+
+                </div>
+            </div>
+
+            <div class="into-button">
+
+                <button>See More customer's Websites</button>
+            </div>
+       
+        </div>
+
+    </div>
+
+
+    <div class="vendor-banner">
+
+        <div class="mainvendor-banner">
+
+            <div class="dokan-box">
+
+                <div class="maindokan-box">
+
+                    <div class="dokan-option">
+
+                      <ul>
+                        <li><button>Dokan</button></li>
+                        <li><button>Woo commerce</button></li>
+                      </ul>
+
+
+                    </div>
+
+                    <div class="dokan-text">
+
+                        <h2>Multi-Vendor <br> Directory & Marketplace</h2>
+
+                        <p>Feature exclusive to Listeo</p>
+
+                    </div>
+
+                    <div class="marketplace">
+
+                        <div class="marketplace-pic">
+
+                            <img src="image/dokan-shop.svg" alt="">
+                        </div>
+
+                        <div class="marketplace-text">
+
+                            <h2>Marketplace with Independent Stores</h2>
+
+                            <p>Similar to Etsy each users can create own store with products. On listing pages vendors can display products from their store and add an advertising widget that links to shop.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="marketplace">
+
+                        <div class="marketplace-pic">
+
+                            <img src="image/dokan-dashboard.svg" alt="">
+                        </div>
+
+                        <div class="marketplace-text">
+
+                            <h2>Dashboard for Vendors and Customers</h2>
+
+                            <p>Customers and Vendors get access to a rich frontend dashboard that allows easy management of product inventory including sales, orders, shipping and more.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="marketplace">
+
+                        <div class="marketplace-pic">
+
+                            <img src="image/dokan-earn.svg" alt="">
+                        </div>
+
+                        <div class="marketplace-text">
+
+                            <h2>Earn from Each Sale as an Admin</h2>
+
+                            <p>A fair flat or percentage commission model allows both parties to share the success of your marketplace!</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="woo-box">
+
+                <div class="mainwoo-box">
+
+                    <div class="mainwoo-pic">
+
+
+                      <img src="image/20230521_214241.jpg"  width="100%">
+
+                    </div>
+
+                    <div class="woo-text">
+
+                        <button>Dokan is required only for multi-vendor marketplace feature.
+                            Booking functionality is built into theme and does not need Dokan.</button>
+
+                       
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="new-booking">
+
+        <div class="copy-booking">
+
+            <div class="booking-text">
+
+                <h2>📅 Listing Types & Booking System</h2>
+
+                <p>Unlike other themes, Listeo includes a built-in and free advanced booking system that offers complete control over online reservation <br>
+                    Each booking operates as a discreet WooCommerce digital order, granting access to a wide range of payment gateways and maximum security.</p>
+            </div>
+
+            <div class="booking-button">
+
+                <button>An overview of all listing types available in Listeo</button>
+            </div>
+
+
+
+            <div class="calender">
+
+                <div class="new-calender">
+
+                    <div class="first-calender">
+                    
+                        <div class="mainfirst-calender">
+ 
+                            <div class="calender-text">
+
+                                <span>1</span>
+                                " Renting"
+
+                                <p>Users can choose check in & out date 📅, number of guests 🤵 or extra service 💰 and send a request to the host to book a reservation. Once the host accepts request user can be charged for the entire amount at reserved time (payments are processed through WooCommerce).
+                                    
+                                    <br><br>
+
+
+
+                                  Host can manage availability calendar, set regular price per night, weekend price or even define custom price for any day he wants. He can also enable price per guest (booking cost will be multiplied by number of guests) and define maximum guests per reservation.
+ 
+                                </p>
+
+                            </div>
+
+                            <div class="firstcalender-pic">
+
+                                <img src="image/booking2.png" alt="">
+                            </div>
+
+                            <div class="thirdcalender-text">
+
+                                <span>3</span>
+                                " Events"
+
+                                <p>Online ticketing system 🎫 for any type of venue or event. Users can add event listings on your website while also sell tickets for those events. Listing manager can set start & end date of event 📅, ticket price and number of tickets available. ☑️</p>
+
+                            </div>
+
+
+                            <div class="fourcalender-pic">
+
+                                <img src="image/classifieds.jpg" alt="">
+                            </div>
+
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="second-calender">
+                       
+                        <div class="mainsecond-calender">
+
+                            <div class="secondcalender-pic">
+
+                                <img src="image/booking1.png" alt="">
+                            </div>
+
+
+                            <div class="secondcalender-text">
+
+                                <span>2</span>
+                                " Services"
+
+                                <p>Users can reserve spots at e.g. restaurants 🍔, barbers 🧔, etc. They can choose date and time slot or specific hour ⏲️ if time slots are non set - in this case time picker will be displayed in the booking widget instead of time slots and guests will be able to make reservations only in opening hours range.
+                                    
+                                    <br><br>
+
+
+
+                                    Listing owner can set booking fee so users can be also charged for reservation. He can also configure maximum number of guests per reservation and extra paid services.
+ 
+                                </p>
+
+                            </div>
+
+                            <div class="thirdcalender-pic">
+
+                                <img src="image/booking3.png" alt="">
+
+
+                            </div>
+
+
+                            <div class="fourcalender-text">
+
+                                <span>4</span>
+                                "Classifieds"
+
+                                <p>Advertising feature that brings buyers and sellers together when someone wants to sell a car, buy new patio furniture, buy new smartphone or find a new babysitter for his kid. 🙂</p>
+                                    
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="olx">
+
+        <div class="olx-banner">
+
+            <div class="olx-text">
+
+                <h2>Monetize Your Website 💰</h2>
+
+                <p>Making money from your website isn't a myth anymore and it’s doable by everyone. Listeo offers plenty of monetization options. You can charge users per listing submission, offer packages or add booking fee – the choice is yours. 😉</p>
+
+            </div>
+
+            <div class="main-olx">
+  
+                <div class="smart-box">
+
+                    <div class="main-smartbox">
+         
+                        <h2>Smart Monetization 💡</h2>
+
+                        <p>Listing features can be available only in specific packages. For example you can make booking or reviews available only in paid plans.</p>
+
+                        <h3>Users can upgrade or downgrade their packages for any listing any time.</h3>
+
+                    </div>
+                </div>
+
+                <div class="example-box">
+
+                    <div class="main-examplebox">
+
+                        <div class="main-exampleboxtext">
+
+                            <h2>An example of how you can configure packages on your website</h2>
+                        </div>
+
+                        <table class="example-table">
+
+                            <tr>
+                                <th class="table-text">Package	</th>
+                                <th>Sample #1</th>
+                                <th>Sample #2</th>
+                                <th>Sample #3</th>
+                            </tr>
+
+                            <tr>
+                                <td class="table-text">Featured Listing (Ads)	</td>
+                                <td><div class="delete">
+                                    <img src="image/delete.svg" width="auto" alt="">
+                                </div></td>
+                                <td><div class="delete">
+                                    <img src="image/delete.svg" width="auto" alt="">
+                                </div></td>
+                                <td><div class="delete">
+                                    <img src="image/check (1).svg" width="auto" alt="">
+                                </div></td>
+                            </tr>  
+                            
+                            <tr>
+                                <td class="table-text">Gallery Images Limit		</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>unlimited</td>
+                            </tr>   
+
+                            <tr>
+                                <td class="table-text">Reviews		</td>
+                                <td><div class="delete">
+                                    <img src="image/delete.svg" width="auto" alt="">
+                                </div></td>
+                                <td><div class="delete">
+                                    <img src="image/check (1).svg" width="auto" alt="">
+                                </div></td>
+                                <td><div class="delete">
+                                    <img src="image/check (1).svg" width="auto" alt="">
+                                </div></td>
+                            </tr>   
+
+                            <tr>
+                                <td class="table-text">Video Section		</td>
+                                <td><div class="delete">
+                                    <img src="image/delete.svg" width="auto" alt="">
+                                </div></td>
+                                <td><div class="delete">
+                                    <img src="image/delete.svg" width="auto" alt="">
+                                </div></td>
+                                <td><div class="delete">
+                                    <img src="image/check (1).svg" width="auto" alt="">
+                                </div></td>
+                            </tr>   
+
+                            <tr>
+                                <td class="table-text">Coupons		</td>
+                                <td><div class="delete">
+                                    <img src="image/delete.svg" width="auto" alt="">
+                                </div></td>
+                                <td><div class="delete">
+                                    <img src="image/delete.svg" width="auto" alt="">
+                                </div></td>
+                                <td><div class="delete">
+                                    <img src="image/check (1).svg" width="auto" alt="">
+                                </div></td>
+                            </tr>   
+
+
+
+                        </table>
+
+                      
+
+                    </div>
+                </div>
+
+                <div class="lastexample-text">
+
+                    <p>
+                        What's more - you can charge fees on every booking service! If the owner of a listing with an apartment booking service will set a fixed price of $50 for each day and you set 10% fee for booking service you will get $5 and pay rest ($45) to the vendor. Vendors get an additional “Wallet” page in the dashboard where they can check summary of an earnings from bookings, payouts history and set payout method. 💸
+                        
+                    </p>
+
+                </div>
+
+                <div class="feature-boxes">
+
+                    <div class="main-featureboxes">
+
+                        <div class="mainfeaturebox-material">
+                            
+                            <div class="mainfeatureboxes-icon">
+
+                                    <i class="fa fa-money" aria-hidden="true"></i>
+
+                            </div>
+
+                            <div class="mainfeatureboxes-text">
+
+                                <h2>Paid and Free Packages</h2>
+
+                                 <p>Monetize your relationship with your customers.</p>
+
+                            </div>
+
+                        </div>
+                    
+                    </div>
+
+                    <div class="main-featureboxes">
+
+                        <div class="mainfeaturebox-material">
+                            
+                            <div class="mainfeatureboxes-icon">
+
+                                    <i class="fa fa-money" aria-hidden="true"></i>
+
+                            </div>
+
+                            <div class="mainfeatureboxes-text">
+
+                                <h2>Payments Gateways</h2>
+
+                                 <p>Choose from 100+ payment gateways for WooCommerce.</p>
+
+                            </div>
+
+                        </div>
+                    
+                    </div>
+
+                    <div class="main-featureboxes">
+
+                        <div class="mainfeaturebox-material">
+                            
+                            <div class="mainfeatureboxes-icon">
+
+                                    <i class="fa fa-money" aria-hidden="true"></i>
+
+                            </div>
+
+                            <div class="mainfeatureboxes-text">
+
+                                <h2>Automatic Notifcations</h2>
+
+                                 <p>Notify your users about their expiring listings.</p>
+
+                            </div>
+
+                        </div>
+                    
+                    </div>
+
+                    <div class="main-featureboxes">
+
+                        <div class="mainfeaturebox-material">
+                            
+                            <div class="mainfeatureboxes-icon">
+
+                                    <i class="fa fa-money" aria-hidden="true"></i>
+
+                            </div>
+
+                            <div class="mainfeatureboxes-text">
+
+                                <h2>Commissions
+                                </h2>
+
+                                <p>Charge fees on every booking service.</p>
+
+                            </div>
+
+                        </div>
+                    
+                    </div>
+
+
+                  
+                       
+                </div>
+
+                <div class="gateways-text">
+
+                    <h2>Choose from a large range of payment gateways for <button><img src="image/logo-woocommerce.svg" alt=""></button></h2>
+
+                    <p>Take payments with the provider that’s right for you so when potential customers get to the payment page, they will be much more likely to finish transaction. 🛒</p>
+                </div>
+
+                <div class="pay-pic">
+
+                    <img src="image/payment-logos.png" width="100%" alt="">
+                </div>
+
+                <div class="stripe">
+
+                    <div class="stripe-banner">
+
+                        <div class="stripe-text">
+
+                            <div class="mainstripe-text">
+
+                          
+                                <h2><button><img src="image/stripe.png" width="100px" alt=""></button> Split Payments</h2>
+
+                                <p>Feature not found in any other theme. When the payment for booking is made Listeo splits the payment between the vendor and site admin (you). You automatically receive commission and vendor his share so you don't need to bother with manual payouts!</p>
+                             
+                                <button class="last-stripe">this feature is optional. You can use any payment gateway but split payment works only with Stripe
+
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="stripe-image">
+
+                            <img src="image/split-payment-stripe.png" width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sms">
+
+        <div class="sms-banner">
+
+            <div class="sms-pic">
+
+                <div class="mainsms-pic">
+            
+                    <img src="image/sms-pic.svg" alt="">
+ 
+                </div>
+
+            </div>
+
+            <div class="sms-text">
+
+                <div class="mainsms-text">
+
+                    <h2> <img src="image/sms.svg" width="40px" alt=""> SMS Integration & Auto Notifications</h2>
+
+                    <p>Listeo features SMS One-Time Code verification during registration and automatic SMS & e-mail notifications for bookings, payments, listing expiration and many more. The message content can be easily customized in theme settings .
+                      <br><br> Listeo is seamlessly integrated with Twilio, enabling efficient notifications through SMS but more providers are coming soon!</p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="map">
+
+        <div class="map-banner">
+
+            <div class="map-pic">
+
+                <div class="mainmap-pic">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14314.628737055968!2d78.1785927!3d26.2403263!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c7f147e415ef%3A0x2aa75ed1bc5c7b77!2sIT%20Learning%20institute!5e0!3m2!1sen!2sin!4v1723280961309!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="map-text">
+
+                <div class="mainmap-texts">
+
+                    <h2>Various Map Providers 🗺️</h2>
+
+                </div>
+
+                <div class="mainmaptext-pic">
+
+                    <img src="image/map_providers.png" width="100%" alt="">
+
+                </div>
+
+                <div class="mainmap-text">
+
+                    <p>
+
+                        Google Maps API pricing got you down? 😥 We got you covered!
+                       <br><br> You can use free alternatives like OpenStreetMaps, MapBox, Bing Maps, Thunderforest and many more!
+                        
+                       <br><br> Listeo supports also free address autocomplete feature powered by OpenStreetMap - entirely no need to use Google API.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="dashboard">
+
+        <div class="main-dashboard">
+
+            <div class="dashboard-text">
+                
+                <div class="maindashboard-text">
+
+                    <h2>Front-End User Dashboard ⚙️</h2>
+
+                    <p>Listeo features user friendly front-end dashboard where listings, bookings, packages, profile details and private messages can be easily managed.
+
+                    <br><br>  Statistics 📈 page includes a bunch of nifty graphs and data to show your customers how many visits their listings get.
+                    </p>
+
+                    <a href="https://www.youtube.com/watch?v=2ef4qSUYIgU"><button class="watch-dash">watch video</button></a>
+
+                </div>
+
+            </div>
+
+            <div class="dashboard-pic">
+
+                <div class="maindashboard-pic">
+
+                    <img src="image/20230521_214241.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="translate">
+
+        <div class="main-translate">
+
+            <div class="translate-pic">
+
+                <div class="maintranslate-pic">
+
+                    <img src="image/hello.png" width="100%">
+                </div>
+            </div>
+
+            <div class="translate-text">
+
+                <div class="maintranslate-text">
+
+                    <h2>Fully Translatable 🈹🆒</h2>
+
+                    <p>We are often asked if Listeo can be translated. Yes of course! ✅
+                       <br> Listeo can be fully translated into any language 🈳 using absolutely free Loco Translate plugin 🔌 directly from the WordPress dashboard!
+                        
+                       <br><br><br> Listeo also works with some premium multi-language plugins like TranslatePress and Weglot. You can make your website 🌐 multilingual in minutes and manage all your translations effortlessly.</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="drop">
+
+        <div class="main-drop">
+
+            <div class="drop-text">
+
+                <div class="maindrop-text">
+
+                    <h2>Drag & Drop Forms Builder 🛠️</h2>
+
+                    <p>for Search and Add Listing Forms
+                       <br><br> Easily create new filters, add & remove form fields or reorder them as needed with drag & drop editor. Simple, isn't it? 😉
+                        
+                       <br><br> Editor is available both for search forms and add listing forms - you can modify listing submission form even for each listing type separately.</p>
+                </div>
+
+            </div>
+
+            <div class="drop-pic">
+
+                <div class="maindrop-pic">
+
+                    <img src="image/forms-editor.png"  alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="support">
+
+        <div class="support-banner">
+
+
+            <div class="ical-support">
+
+                <div class="icalsupport-text">
+
+                    <h2>iCal Support</h2>
+
+                    <div class="icalsupport-pic">
+
+                       <button> <img src="image/ical.png" width="100%" alt=""></button>
+                    </div>
+
+                   <div class="icalsupport-word">
+
+                    <p>Listeo features tool that allows 2-way synchronization of your bookings and availability through different platforms.
+
+                        <br><br> This means if someone books a room through Listeo your availability will be changed on Booking.com or Airbnb calendar preventing overbookings and keeping you organised.</p>
+                   </div>
+                </div>
+
+            </div>
+
+            <div class="ios">
+
+                <div class="ios-support">
+
+                    <h2>iOS & Android App *</h2>
+
+                    <p>Maximize your website potential and take it to the next level by releasing mobile app 📱 with Flustore Listing - dedicated mobile application for Listeo.</p>
+
+                    <button>App is sold separately on CodeCanyon by our partner InspireUI</button>
+
+                    <div class="iossupport-more">
+
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="google">
+
+        <div class="google-banner">
+
+            <div class="google-text">
+
+                <div class="maingoogle-text">
+
+                    <h2><img src="image/google-reviews-logo.svg" width="22px">oogle Reviews</h2>
+
+                    <p>Add social proof and authenticity! Listeo allows to embed Google Reviews on listing pages without forcing users to use Google Business API.</p>
+
+                    <div class="maingoogle-pic">
+
+                        <img src="image/google-reviews.png"  width="100%">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="multi">
+
+                <div class="multi-text">
+
+                    <h2>⭐ Multi-Criteria Ratings</h2>
+
+                    <p>Multi-criteria ratings allow users to express more differentiated opinions. Criterias are easily configurable and you create them as many as you wish.</p>
+
+                    <div class="multi-pic">
+
+                        <img src="image/multi-criteria-reviews.png" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ui">
+
+        <div class="ui-banner">
+
+            <div class="ui-text">
+
+                <div class="mainui-text">
+
+                    <h2>UX Focused Design 🎯</h2>
+
+                    <p>Whenever users land on your website, they’re having an experience.
+                       <br> The quality 💎 of their experience has a significant impact on their opinion and conversions .
+                    </p>
+
+                    <h3>User Experience focused design builds trust and credibility of your audience, helps you get to top of search engine results and increases conversion rate! 📈</h3>
+
+                    <p>We were primarily concerned with how Listeo works and feels.
+                        UX audits have proven that we did it very well! ✌️
+                        
+                    </p>
+
+                    
+
+
+                </div>
+
+               
+            </div>
+
+            <div class="ui-pic">
+
+                <div class="mainui-pic">
+
+                    <img src="image/heatmap.png"  width="100%">
+
+                    <button>Heatmap from User Experience Audit</button>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="product">
+
+        <div class="product-banner">
+
+            <div class="product-text">
+
+                <h2>Search Results Layouts</h2>
+
+                <p>Choose from various styles of layouts 🎨 that suits your project's exact need - just what you would expect from genuine directory & listings theme!</p>
+
+            </div>
+
+            <div class="product-image">
+
+                <div class="product-pic">
+
+                    <div class="mainproduct-pic">
+
+                        <img src="image/half-screen-map.png" width="100%">
+
+                       
+                    </div>
+
+                </div>
+
+                <div class="product-pic">
+
+                    <div class="mainproduct-pic">
+
+                        <img src="image/half-screen-map.png" width="100%">
+
+                       
+                    </div>
+
+                </div>
+
+
+                <div class="product-pic">
+
+                    <div class="mainproduct-pic">
+
+                        <img src="image/half-screen-map.png" width="100%">
+
+                       
+                    </div>
+
+                </div>
+
+
+                <div class="product-pic">
+
+                    <div class="mainproduct-pic">
+
+                        <img src="image/half-screen-map.png" width="100%">
+
+                       
+                    </div>
+
+                </div>
+
+
+                <div class="product-pic">
+
+                    <div class="mainproduct-pic">
+
+                        <img src="image/half-screen-map.png" width="100%">
+
+                       
+                    </div>
+
+                </div>
+
+
+                <div class="product-pic">
+
+                    <div class="mainproduct-pic">
+
+                        <img src="image/half-screen-map.png" width="100%">
+
+                       
+                    </div>
+
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class="dark">
+
+        <div class="dark-banner">
+
+            <div class="dark-text">
+
+                <div class="maindark-text">
+
+                    <h2>Dark & Light Mode</h2>
+
+                    <p>Listeo features stunning dark version for dark-theme lovers. 🌚🌞 An excellent user experience especially in low-light environments.</p>
+                </div>
+            </div>
+
+            <div class="dark-pic">
+
+                <div class="maindark-pic">
+
+                    <img src="image/light-mode-2.png" width="100%">
+                </div>
+            </div>
+
+            <div class="dark-pic">
+
+                <div class="maindark-pic">
+
+                    <img src="image/light-mode.png" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mobile">
+
+        <div class="mobile-banner">
+
+            <div class="mobile-text">
+
+                <div class="mainmobile-text">
+
+                    <h2>Mobile Friendly 📱</h2>
+
+                    <p>It's absolutely essential that your website has to be as accessible as possible on all devices. The use of mobile devices like smartphones and tablets has increased 📈 rapidly and they have overtaken the desktop as the primary method of accessing the web.
+
+                     <br><br><br>   A mobile-friendly site is something that truly has to be seen to see the whole experience. That's why we took care of it and Listeo looks fabulous across all of mobile devices including laptops, netbooks, tablets and smartphones!</p>
+                </div>
+
+
+            </div>
+
+            <div class="mobile-pic">
+
+                <div class="mainmobile-pic">
+
+                    <img src="image/mobile-menu.gif" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="unique">
+
+        <div class="unique-banner">
+
+            <h3>Other Unique Features</h3>
+
+            <div class="unique-box">
+
+                <div class="mainunique-box">
+
+                    <div class="unique-icon">
+
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="unique-text">
+
+                        <h2>One Click Demo Install</h2>
+
+                        <p>You can install demo content with a few clicks using built-in Setup Wizard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="unique-box">
+
+                <div class="mainunique-box">
+
+                    <div class="unique-icon">
+
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="unique-text">
+
+                        <h2>One Click Demo Install</h2>
+
+                        <p>You can install demo content with a few clicks using built-in Setup Wizard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="unique-box">
+
+                <div class="mainunique-box">
+
+                    <div class="unique-icon">
+
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="unique-text">
+
+                        <h2>One Click Demo Install</h2>
+
+                        <p>You can install demo content with a few clicks using built-in Setup Wizard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="unique-box">
+
+                <div class="mainunique-box">
+
+                    <div class="unique-icon">
+
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="unique-text">
+
+                        <h2>One Click Demo Install</h2>
+
+                        <p>You can install demo content with a few clicks using built-in Setup Wizard.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="unique-box">
+
+                <div class="mainunique-box">
+
+                    <div class="unique-icon">
+
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="unique-text">
+
+                        <h2>One Click Demo Install</h2>
+
+                        <p>You can install demo content with a few clicks using built-in Setup Wizard.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="unique-box">
+
+                <div class="mainunique-box">
+
+                    <div class="unique-icon">
+
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="unique-text">
+
+                        <h2>One Click Demo Install</h2>
+
+                        <p>You can install demo content with a few clicks using built-in Setup Wizard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="unique-box">
+
+                <div class="mainunique-box">
+
+                    <div class="unique-icon">
+
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="unique-text">
+
+                        <h2>One Click Demo Install</h2>
+
+                        <p>You can install demo content with a few clicks using built-in Setup Wizard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="unique-box">
+
+                <div class="mainunique-box">
+
+                    <div class="unique-icon">
+
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="unique-text">
+
+                        <h2>One Click Demo Install</h2>
+
+                        <p>You can install demo content with a few clicks using built-in Setup Wizard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="unique-box">
+
+                <div class="mainunique-box">
+
+                    <div class="unique-icon">
+
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="unique-text">
+
+                        <h2>One Click Demo Install</h2>
+
+                        <p>You can install demo content with a few clicks using built-in Setup Wizard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="unique-box">
+
+                <div class="mainunique-box">
+
+                    <div class="unique-icon">
+
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="unique-text">
+
+                        <h2>One Click Demo Install</h2>
+
+                        <p>You can install demo content with a few clicks using built-in Setup Wizard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="unique-box">
+
+                <div class="mainunique-box">
+
+                    <div class="unique-icon">
+
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="unique-text">
+
+                        <h2>One Click Demo Install</h2>
+
+                        <p>You can install demo content with a few clicks using built-in Setup Wizard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="unique-box">
+
+                <div class="mainunique-box">
+
+                    <div class="unique-icon">
+
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="unique-text">
+
+                        <h2>One Click Demo Install</h2>
+
+                        <p>You can install demo content with a few clicks using built-in Setup Wizard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="unique-box">
+
+                <div class="mainunique-box">
+
+                    <div class="unique-icon">
+
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="unique-text">
+
+                        <h2>One Click Demo Install</h2>
+
+                        <p>You can install demo content with a few clicks using built-in Setup Wizard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="customer">
+
+        <div class="customer-banner">
+
+            <div class="customer-text">
+
+                <h2>Customer Showcase</h2>
+
+                <p>Check out some well-made websites that are built with Listeo. 🙂</p>
+
+            </div>
+
+            <div class="showcase">
+
+                <div class="customer-pic">
+
+                    <div class="maincustomer-pic">
+
+                        <img src="image/sfusitalia.it.png"  width="100%">
+                    </div>
+                </div>
+
+                <div class="customer-pic">
+
+                    <div class="maincustomer-pic">
+
+                        <img src="image/showcase-11.png" width="100%" alt="">
+                    </div>
+                </div>
+
+                <div class="customer-pic">
+
+                    <div class="maincustomer-pic">
+
+                        <img src="image/showcase-17.png"  width="100%">
+                    </div>
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="online">
+
+        <div class="online-banner">
+
+            <div class="first-banner">
+
+                <div class="firstonline-banner">
+
+                    <div class="firstonlinebanner-pic">
+
+                        <a href="https://themeforest.net/item/listeo-directory-listings-wordpress-theme/23239259/support"><img src="image/lifesaver.svg" width="80px"></a>
+                    </div>
+
+                    <div class="firstonlinebanner-text">
+
+                        <h3>Dedicated Support</h3>
+
+                        <p>We provide support usually within a few hours. Sometimes we reply even within a few minutes. 🙂</p>
+
+                   </div>
+                </div>
+            </div>
+
+            <div class="second-banner">
+
+                <div class="secondonline-banner">
+
+                    <div class="secondonlinebanner-pic">
+
+                        <a href="https://www.docs.purethemes.net/listeo/"><img src="image/docs.svg" width="80px"></a>
+                    </div>
+
+                    <div class="secondonlinebanner-text">
+
+                        <h3>Online Documentation</h3>
+
+                        <p>Listeo has an extensive online documentation that will definitely help setting up your website quickly.</p>
+                        
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="last-text">
+
+        <p>Made with <img src="image/heart.svg" width="18px"> by Purethemes</p>
+        
+    </div>
+            
+       
+    
+    
+</body>
+</html>
